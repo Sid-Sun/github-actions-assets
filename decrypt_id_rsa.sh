@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Decrypt the file
-mkdir $HOME/secrets
+mkdir $HOME/gh_actions_secrets
 # --batch to prevent interactive command --yes to assume "yes" for questions
 gpg --quiet --batch --yes --decrypt --passphrase="$PASSPHRASE" \
---output $HOME/secrets/secret.asc secret.asc.gpg
+--output $HOME/gh_actions_secrets/secret.asc secret.asc.gpg
