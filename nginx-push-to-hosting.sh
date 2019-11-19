@@ -8,4 +8,4 @@ put debian-package/nginx-auto-config_amd64.deb nginx-auto-config.deb
 put /usr/bin/nginx-auto-config nginx-auto-config_linux-amd64
 bye" > batchfile
 #Let us upload
-sftp -b batchfile -p $PORT $USER@$HOST 
+sftp -b batchfile -P $PORT $USER@$HOST
